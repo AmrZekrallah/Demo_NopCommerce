@@ -74,7 +74,7 @@ public class D01_registerStepDef {
        // boolean Actual = Hooks.driver.findElement(By.cssSelector("div[class=\"result\"]")).isDisplayed();
         String Green = NopeRegister.ColorAssertion().getCssValue("color");
         System.out.println(Green);
-        Soft.assertEquals(Green,"rgba(76, 177, 124, 1)","NotDone");
+        Soft.assertEquals(Green,    "rgba(76, 177, 124, 1)","NotDone");
         Soft.assertAll();
         Thread.sleep(2000);
         NopeRegister.CompleteRegisterButton().click();
