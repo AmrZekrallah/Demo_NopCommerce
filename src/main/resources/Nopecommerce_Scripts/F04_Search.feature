@@ -1,4 +1,4 @@
-Feature: Search For product by name then by sku
+Feature: User search for product by name then by sku
 
   Scenario Outline:user could search using product name
 

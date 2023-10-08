@@ -71,7 +71,6 @@ public class D01_registerStepDef {
     @Then("success message is displayed")
     public void Assertion()throws InterruptedException{
         SoftAssert Soft = new SoftAssert();
-       // boolean Actual = Hooks.driver.findElement(By.cssSelector("div[class=\"result\"]")).isDisplayed();
         String Green = NopeRegister.ColorAssertion().getCssValue("color");
         System.out.println(Green);
         Soft.assertEquals(Green,    "rgba(76, 177, 124, 1)","NotDone");

@@ -4,15 +4,15 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.pages_PomDesign.P04_homePage;
-import org.openqa.selenium.By;
+import org.example.pages_PomDesign.P04_search;
+import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class D04_searchStepDef {
     SoftAssert Soft = new SoftAssert();
-    P04_homePage NopSearch = new P04_homePage();
+    P04_search NopSearch = new P04_search();
 
     @Given("user search for product by name {string}")
     public void UserSearchForProducts(String productname){

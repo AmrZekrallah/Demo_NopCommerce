@@ -1,18 +1,16 @@
 package org.example.stepDefs;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.pages_PomDesign.P03_homePage;
-import org.openqa.selenium.By;
+import org.example.pages_PomDesign.P03_currencies;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class D03_currenciesStepDef {
-    P03_homePage sign = new P03_homePage();
+    P03_currencies sign = new P03_currencies();
     @Given("user change to euro from the downlist")
     public void UserChangedollarToeuro(){
         WebElement Downlist = sign.Euro();
